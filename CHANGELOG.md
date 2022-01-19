@@ -11,6 +11,9 @@
 - **license:** added license
 - **tailwind:** finished configuration
 
+### Revert
+- **seo:** removed skeleton component
+
 ### Work in Progress
 - **seo:** added skeleton for seo overrides
 - **seo:** added ts check on seo.config
