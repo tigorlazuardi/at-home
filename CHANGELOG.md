@@ -11,6 +11,9 @@
 - **license:** added license
 - **tailwind:** finished configuration
 
+### Work in Progress
+- **seo:** added global seo
+
 
 <a name="0.1.0"></a>
 ## 0.1.0 - 2022-01-19
