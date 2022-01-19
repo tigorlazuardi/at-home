@@ -10,7 +10,7 @@ pre-commit:
             run: npx prettier -w {staged_files} && git add {staged_files}
 commit-msg:
     commitline:
-        run: npx --no-install commitlint --edit {1}
+        run: npx commitlint --edit {1}
 
 post-commit:
     parallel: true
