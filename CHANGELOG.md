@@ -1,6 +1,9 @@
 <a name="unreleased"></a>
 ## [Unreleased]
 
+### Cleanups
+- removed unused imports
+
 ### Configuration
 - **changelog:** set title mappings
 - **lefthook:** removed unnecessary text
