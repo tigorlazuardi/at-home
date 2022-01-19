@@ -12,6 +12,7 @@
 - **tailwind:** finished configuration
 
 ### Work in Progress
+- **seo:** added skeleton for seo overrides
 - **seo:** added ts check on seo.config
 - **seo:** added global seo
 
