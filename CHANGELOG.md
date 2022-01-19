@@ -9,6 +9,7 @@
 ### Features
 - **changelog:** added changelog
 - **license:** added license
+- **tailwind:** finished configuration
 
 
 <a name="0.1.0"></a>
