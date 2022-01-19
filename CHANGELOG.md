@@ -1,21 +1,22 @@
 <a name="unreleased"></a>
 ## [Unreleased]
 
-### Conf
+### Configuration
+- **changelog:** set title mappings
 - **lefthook:** removed unnecessary text
 - **lefthook:** update lefthook config
 
-### Feat
+### Features
 - **changelog:** added changelog
 - **license:** added license
 
 
 <a name="0.1.0"></a>
 ## 0.1.0 - 2022-01-19
-### Chore
+### Cleanups
 - format
 
-### Feat
+### Features
 - **lefthook:** added lefthook
 - **tailwind:** added tailwind config
 
