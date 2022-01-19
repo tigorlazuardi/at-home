@@ -7,6 +7,7 @@
 
 ### Feat
 - **changelog:** added changelog
+- **license:** added license
 
 
 <a name="0.1.0"></a>
