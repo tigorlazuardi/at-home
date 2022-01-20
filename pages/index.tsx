@@ -6,7 +6,7 @@ const Home: NextPage = () => {
 	return (
 		<div className="container">
 			<main className="min-h-screen py-16 flex flex-1 flex-col justify-center items-center">
-				<h1 className="text-dark m-0 text-4xl">
+				<h1 className="text-black m-0 text-4xl dark:text-white">
 					Welcome to{' '}
 					<a href="https://nextjs.org" className="text-blue-400 hover:underline">
 						Next.js!
