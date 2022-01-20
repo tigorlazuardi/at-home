@@ -23,6 +23,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 					['min-h-screen']: true,
 					dark: dark,
 					['bg-discord-900']: dark,
+					['dark:text-white']: true,
 				})}
 			>
 				<SideBar
