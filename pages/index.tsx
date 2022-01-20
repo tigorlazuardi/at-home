@@ -4,10 +4,13 @@ import styles from '../styles/Home.module.css'
 
 const Home: NextPage = () => {
 	return (
-		<div className={styles.container}>
-			<main className={styles.main}>
-				<h1 className={styles.title}>
-					Welcome to <a href="https://nextjs.org">Next.js!</a>
+		<div className="container">
+			<main className="min-h-screen py-16 flex flex-1 flex-col justify-center items-center">
+				<h1 className="text-dark m-0 text-4xl">
+					Welcome to{' '}
+					<a href="https://nextjs.org" className="text-blue-400 hover:underline">
+						Next.js!
+					</a>
 				</h1>
 
 				<p className={styles.description}>
