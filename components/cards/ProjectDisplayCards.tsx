@@ -21,14 +21,14 @@ export default function ProjectDisplayCard({
 	return (
 		<div className={className}>
 			<div
-				className="overflow-hidden min-w-xs shadow-lg transition-all focus:shadow-xl focus:-translate-y-1 hover:shadow-xl hover:-translate-y-2 hover:cursor-pointer sm:h-40"
+				className="overflow-hidden rounded-xl shadow-lg transition-all dark:shadow-discord-900 min-w-xs dark:bg-discord-700 focus:shadow-xl focus:-translate-y-1 hover:shadow-xl hover:-translate-y-2 hover:cursor-pointer sm:h-40"
 				onClick={() => window.open(projectURL, '_blank')}
 			>
 				<div className="py-4 px-6">
 					<div className="flex justify-between">
 						<div className="text-xl font-bold">{projectName}</div>
 						{language && (
-							<span className="py-1 px-3 mr-2 text-sm font-semibold text-gray-700 bg-blue-200 rounded-full">
+							<span className="py-1 px-3 mr-2 text-sm font-semibold text-gray-700 bg-blue-200 rounded-full dark:bg-yellow-600 dark:text-white">
 								{language}
 							</span>
 						)}
@@ -37,13 +37,13 @@ export default function ProjectDisplayCard({
 						{tags?.map((v, i) => (
 							<span
 								key={i}
-								className="py-1 px-3 mr-2 text-sm font-semibold text-gray-700 dark:text-gray-300 bg-gray-200 dark:bg-gray-700 rounded-full"
+								className="py-1 px-3 mr-2 text-sm font-semibold text-gray-700 bg-gray-200 rounded-full transition-all dark:text-gray-300 dark:bg-gray-700"
 							>
 								{v}
 							</span>
 						))}
 					</div>
-					<p className="dark:text-gray-500 text-gray-600">{description}</p>
+					<p className="text-gray-600 transition-all dark:text-gray-400">{description}</p>
 				</div>
 			</div>
 		</div>

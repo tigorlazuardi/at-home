@@ -20,9 +20,9 @@ a {
 @tailwind utilities;
 
 .sidebar-icons {
-	@apply relative flex items-center justify-center w-12 h-12 mx-auto text-green-500 transition-all duration-200 ease-linear rounded-3xl bg-discord-300 hover:bg-green-600 hover:text-white hover:rounded-xl dark:text-green-500 dark:hover:text-white dark:bg-discord-700 dark:hover:bg-green-600;
+	@apply rounded-3xl bg-discord-300 hover:bg-green-600 hover:text-white hover:rounded-xl dark:text-green-500 dark:hover:text-white dark:bg-discord-700 dark:hover:bg-green-600 relative flex items-center justify-center w-12 h-12 mx-auto text-green-500 transition-all duration-200 ease-linear;
 }
 
 .sidebar-tooltip-scale-0 {
-	@apply absolute z-50 w-auto p-2 m-2 text-xs font-bold text-white transition-all duration-100 origin-right scale-0 rounded-md shadow-md left-14 min-w-max bg-discord-900 2xl:text-lg sm-max:hidden dark:bg-discord-700;
+	@apply left-14 min-w-max bg-discord-900 2xl:text-lg sm-max:hidden dark:bg-discord-700 absolute z-50 w-auto p-2 m-2 text-xs font-bold text-white transition-all duration-100 origin-right scale-0 rounded-md shadow-md;
 }

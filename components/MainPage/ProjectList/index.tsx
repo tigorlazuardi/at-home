@@ -22,7 +22,7 @@ export default function ProjectList({ projectItems }: ProjectListProp) {
 						tags={v.tags}
 						description={v.description}
 						key={i}
-						className="flex-grow self-center sm-max:basis-full sm:basis-1/2 sm:px-4 sm:py-2"
+						className="sm-max:basis-full sm:basis-1/2 sm:px-4 sm:py-2 self-center flex-grow"
 					/>
 				))}
 			</div>

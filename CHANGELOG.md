@@ -2,6 +2,7 @@
 ## [Unreleased]
 
 ### Cleanups
+- sort tailwind classes
 - format
 - test tailwind
 - removed unused imports

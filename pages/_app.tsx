@@ -24,6 +24,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 					dark: dark,
 					['bg-discord-900']: dark,
 					['dark:text-white']: true,
+					['transition-all']: true,
 				})}
 			>
 				<SideBar
