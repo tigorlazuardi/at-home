@@ -9,7 +9,15 @@ export default function ProjectList() {
 			</header>
 			<div className="flex flex-wrap">
 				{[0, 1, 2, 3, 4, 5].map((v) => (
-					<ProjectDisplayCard key={v} className="basis-2/4" />
+					<ProjectDisplayCard
+						projectURL="#"
+						projectName="The Coldest Sunset"
+						tags={undefined}
+						description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et
+						perferendis eaque, exercitationem praesentium nihil."
+						key={v}
+						className="basis-2/4"
+					/>
 				))}
 			</div>
 		</section>
