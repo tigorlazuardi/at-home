@@ -25,6 +25,7 @@
 - **seo:** removed skeleton component
 
 ### Work in Progress
+- **index-page:** index page for project list now uses incremental regeneration
 - **project-display-card:** update to use props
 - **project-list:** implemented project list
 - **seo:** added skeleton for seo overrides

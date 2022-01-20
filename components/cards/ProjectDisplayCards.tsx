@@ -21,7 +21,7 @@ export default function ProjectDisplayCard({
 	return (
 		<div className={className}>
 			<div
-				className="overflow-hidden shadow-lg transition-all focus:shadow-xl focus:-translate-y-1 hover:shadow-xl hover:-translate-y-2 hover:cursor-pointer h-40"
+				className="overflow-hidden min-w-xs shadow-lg transition-all focus:shadow-xl focus:-translate-y-1 hover:shadow-xl hover:-translate-y-2 hover:cursor-pointer sm:h-40"
 				onClick={() => window.open(projectURL, '_blank')}
 			>
 				<div className="py-4 px-6">
@@ -37,7 +37,7 @@ export default function ProjectDisplayCard({
 						{tags?.map((v, i) => (
 							<span
 								key={i}
-								className="py-1 px-3 mr-2 text-sm font-semibold text-gray-700 bg-gray-200 rounded-full"
+								className="py-1 px-3 mr-2 text-sm font-semibold text-gray-700 dark:text-gray-300 bg-gray-200 dark:bg-gray-700 rounded-full"
 							>
 								{v}
 							</span>
