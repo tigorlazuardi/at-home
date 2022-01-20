@@ -15,6 +15,7 @@
 ### Features
 - **app:** imported items from abandoned repo
 - **changelog:** added changelog
+- **git-ignore:** ignore sitemap generated items
 - **license:** added license
 - **sidebar:** added sidebar to whole site
 - **sitemap:** added next sitemap and robot txt
