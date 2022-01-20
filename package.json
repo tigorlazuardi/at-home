@@ -14,7 +14,8 @@
 		"next-seo": "^4.28.1",
 		"react": "17.0.2",
 		"react-dom": "17.0.2",
-		"react-icons": "^4.3.1"
+		"react-icons": "^4.3.1",
+		"sharp": "^0.29.3"
 	},
 	"devDependencies": {
 		"@arkweid/lefthook": "^0.7.7",
