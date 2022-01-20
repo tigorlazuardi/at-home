@@ -42,6 +42,18 @@ module.exports = {
 			fontFamily: {
 				primary: ['Inter', ...fontFamily.sans],
 			},
+			minWidth: {
+				xs: '20rem',
+				sm: '24rem',
+				md: '28rem',
+				lg: '32rem',
+				xl: '36rem',
+				'2xl': '42rem',
+			},
+			width: {
+				100: '28rem',
+				104: '32rem',
+			},
 		},
 	},
 	plugins: [],

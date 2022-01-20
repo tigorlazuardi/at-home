@@ -1,22 +1,28 @@
-import ProjectDisplayCard from '../../cards/ProjectDisplayCards'
+import ProjectDisplayCard, { ProjectDisplayCardItem } from '../../cards/ProjectDisplayCards'
 
-export default function ProjectList() {
+export interface ProjectListProp {
+	projectItems: ProjectDisplayCardItem[]
+}
+
+export default function ProjectList({ projectItems }: ProjectListProp) {
 	return (
 		<section>
 			<header className="divide-y-4">
 				<h1 className="py-4">Projects</h1>
-				<p className="py-4">Following projects are the things I am working on or have done.</p>
+				<p className="py-4">
+					Following projects are the things I am working on or have done and I left it as open source.
+				</p>
 			</header>
-			<div className="flex flex-wrap">
-				{[0, 1, 2, 3, 4, 5].map((v) => (
+			<div className="flex flex-wrap justify-between content-end">
+				{projectItems.map((v, i) => (
 					<ProjectDisplayCard
-						projectURL="#"
-						projectName="The Coldest Sunset"
-						tags={undefined}
-						description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et
-						perferendis eaque, exercitationem praesentium nihil."
-						key={v}
-						className="basis-2/4"
+						language={v.language}
+						projectURL={v.projectURL}
+						projectName={v.projectName}
+						tags={v.tags}
+						description={v.description}
+						key={i}
+						className="flex-grow self-center sm-max:basis-full sm:basis-1/2 sm:px-4 sm:py-2"
 					/>
 				))}
 			</div>
