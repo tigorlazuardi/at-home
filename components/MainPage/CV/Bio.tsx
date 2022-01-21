@@ -29,8 +29,8 @@ export default function Bio(prop: BioProps) {
 						key={k.key}
 						className="divide-y-4 divide-black divide-double dark:divide-white basis-1/4 grow sm-max:basis-1/2"
 					>
-						<div className="pb-2 pl-1 font-bold">{k.key}</div>
-						<div className="pt-2 pl-1">{k.value}</div>
+						<div className="pb-2 pl-1 font-bold sm-max:pb-1">{k.key}</div>
+						<div className="pt-2 pl-1 sm-max:pt-1 sm-max:text-sm">{k.value}</div>
 					</div>
 				))}
 			</div>
