@@ -18,6 +18,7 @@
 - **changelog:** added changelog
 - **git-ignore:** ignore sitemap generated items
 - **license:** added license
+- **project-list-card:** update appearance to be nicer
 - **rustywind:** added rustywind to dev dependencies
 - **sharp:** added sharp for nextjs
 - **sidebar:** added sidebar to whole site

@@ -54,6 +54,11 @@ module.exports = {
 				100: '28rem',
 				104: '32rem',
 			},
+			minHeight: {
+				12: '12rem',
+				24: '24rem',
+				40: '40rem',
+			},
 		},
 	},
 	plugins: [],

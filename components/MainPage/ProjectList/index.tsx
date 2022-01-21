@@ -13,7 +13,7 @@ export default function ProjectList({ projectItems }: ProjectListProp) {
 					Following projects are the things I am working on or have done and I left it as open source.
 				</p>
 			</header>
-			<div className="flex flex-wrap justify-between content-end">
+			<div className="flex flex-wrap gap-x-5 justify-between content-end items-stretch">
 				{projectItems.map((v, i) => (
 					<ProjectDisplayCard
 						language={v.language}
@@ -22,7 +22,7 @@ export default function ProjectList({ projectItems }: ProjectListProp) {
 						tags={v.tags}
 						description={v.description}
 						key={i}
-						className="sm-max:basis-full sm:basis-1/2 sm:px-4 sm:py-2 self-center flex-grow"
+						className="gap-x-4 sm:py-2 grow sm-max:basis-full sm:basis-1/3"
 					/>
 				))}
 			</div>

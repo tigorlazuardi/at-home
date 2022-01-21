@@ -21,14 +21,14 @@ export default function ProjectDisplayCard({
 	return (
 		<div className={className}>
 			<div
-				className="overflow-hidden rounded-xl shadow-lg transition-all dark:shadow-discord-900 min-w-xs dark:bg-discord-700 focus:shadow-xl focus:-translate-y-1 hover:shadow-xl hover:-translate-y-2 hover:cursor-pointer sm:h-40"
+				className="overflow-hidden h-full rounded-xl shadow-lg transition-all hover:shadow-xl hover:-translate-y-2 hover:cursor-pointer focus:shadow-xl focus:-translate-y-1 min-w-xs min-h-12 dark:shadow-discord-900 dark:bg-discord-700"
 				onClick={() => window.open(projectURL, '_blank')}
 			>
 				<div className="py-4 px-6">
 					<div className="flex justify-between">
 						<div className="text-xl font-bold">{projectName}</div>
 						{language && (
-							<span className="py-1 px-3 mr-2 text-sm font-semibold text-gray-700 bg-blue-200 rounded-full dark:bg-yellow-600 dark:text-white">
+							<span className="py-1 px-3 mr-2 text-sm font-semibold text-gray-700 bg-blue-200 rounded-full dark:text-white dark:bg-yellow-600">
 								{language}
 							</span>
 						)}
