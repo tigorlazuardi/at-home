@@ -55,9 +55,16 @@ module.exports = {
 				104: '32rem',
 			},
 			minHeight: {
+				6: '6rem',
+				8: '8rem',
+				10: '10rem',
 				12: '12rem',
 				24: '24rem',
 				40: '40rem',
+			},
+			maxWidth: {
+				4: '4rem',
+				8: '8rem',
 			},
 		},
 	},

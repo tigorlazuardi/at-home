@@ -16,6 +16,7 @@
 ### Features
 - **app:** imported items from abandoned repo
 - **changelog:** added changelog
+- **cv:** added fields
 - **cv-card:** added popout illusion
 - **git-ignore:** ignore sitemap generated items
 - **license:** added license
