@@ -2,6 +2,7 @@
 ## [Unreleased]
 
 ### Features
+- **bio:** changed div to section
 - **bio:** update content
 - **bio:** update content
 - **bio:** update content
