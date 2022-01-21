@@ -17,6 +17,7 @@
 - **app:** imported items from abandoned repo
 - **changelog:** added changelog
 - **cv:** added fields
+- **cv:** reduce gap between text a little
 - **cv-card:** added popout illusion
 - **git-ignore:** ignore sitemap generated items
 - **license:** added license
