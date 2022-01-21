@@ -17,22 +17,23 @@
 ### Features
 - **app:** imported items from abandoned repo
 - **changelog:** added changelog
-- **cv:** added fields
 - **cv:** reduce gap between text a little
+- **cv:** added fields
 - **cv-card:** added popout illusion
 - **git-ignore:** ignore sitemap generated items
 - **license:** added license
-- **project-list-card:** uses a tag instead of using onclick to open repository
 - **project-list-card:** general improvement
 - **project-list-card:** update appearance to be nicer
+- **project-list-card:** uses a tag instead of using onclick to open repository
+- **projects:** card floats upon hold by finger
 - **rustywind:** added rustywind to dev dependencies
 - **sharp:** added sharp for nextjs
 - **sidebar:** added sidebar to whole site
 - **sitemap:** added next sitemap and robot txt
 - **tailwind:** added darkmode
 - **tailwind:** finished configuration
-- **titles:** increase font size and change to bold
 - **titles:** reduced size on mobile
+- **titles:** increase font size and change to bold
 
 ### Revert
 - **seo:** removed skeleton component

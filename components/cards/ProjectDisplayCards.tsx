@@ -20,7 +20,7 @@ export default function ProjectDisplayCard({
 }: ProjectDisplayCardProps) {
 	return (
 		<div className={className}>
-			<div className="overflow-hidden h-full rounded-xl shadow-lg transition-all hover:shadow-xl hover:-translate-y-2 hover:cursor-pointer focus:shadow-xl focus:-translate-y-1 min-w-xs min-h-8 dark:shadow-discord-900 dark:bg-discord-700">
+			<div className="overflow-hidden h-full rounded-xl shadow-lg transition-all hover:shadow-xl hover:-translate-y-2 hover:cursor-pointer focus:shadow-xl focus:-translate-y-1 selection:shadow-xl selection:-translate-y-1 min-w-xs min-h-8 dark:shadow-discord-900 dark:bg-discord-700">
 				<a href={projectURL}>
 					<div className="py-4 px-6">
 						<div className="flex justify-between">
