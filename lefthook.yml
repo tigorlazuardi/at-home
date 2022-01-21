@@ -8,6 +8,9 @@ pre-commit:
             glob: '*.{js,jsx,ts,tsx,json,css,scss,yml,yaml,md}'
             exclude: 'CHANGELOG.md|CHANGELOG.tpl.md'
             run: npx prettier -w {staged_files} && git add {staged_files}
+        rustywind:
+            glob: '*.{jsx,tsx,css}'
+            run: npx rustywind --write {staged_files}
 commit-msg:
     commitline:
         run: npx commitlint --edit {1}
