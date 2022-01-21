@@ -22,11 +22,11 @@ export default function ProjectDisplayCard({
 		<div className={className}>
 			<div className="overflow-hidden h-full rounded-xl shadow-lg transition-all hover:shadow-xl hover:-translate-y-2 hover:cursor-pointer focus:shadow-xl focus:-translate-y-1 active:-translate-y-1 selection:shadow-xl min-h-8 sm:min-w-xs dark:shadow-discord-900 dark:bg-discord-700">
 				<a href={projectURL} target="_blank" rel="noreferrer">
-					<div className="py-4 px-6">
+					<div className="py-4 px-6 sm-max:px-4 sm-max:py-4">
 						<div className="flex justify-between items-center">
 							<div className="text-xl font-bold sm-max:text-sm">{projectName}</div>
 							{language && (
-								<span className="py-1 px-3 mr-2 text-sm font-semibold text-gray-700 bg-blue-200 rounded-full dark:text-white dark:bg-yellow-600 sm-max:text-xs">
+								<span className="py-1 px-3 text-sm font-semibold text-gray-700 bg-blue-200 rounded-full dark:text-white dark:bg-yellow-600 sm-max:text-xs">
 									{language}
 								</span>
 							)}

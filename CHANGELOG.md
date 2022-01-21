@@ -6,6 +6,7 @@
 - **bio:** update content
 - **bio:** update content
 - **bio:** update content
+- **projects:** improvement for mobile
 
 
 <a name="0.1.1"></a>
