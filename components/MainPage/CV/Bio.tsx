@@ -38,7 +38,7 @@ export default function Bio(prop: BioProps) {
 		},
 		{ key: 'Job', value: 'Backend Engineer' },
 		{ key: 'Current Working Location', value: 'PT Bareksa Portal Investasi' },
-		{ key: 'Work Experience', value: ['Bareksa', '2019'] },
+		{ key: 'Work Experience', value: ['Bareksa', '2019 to Now'] },
 	]
 
 	const renderValue = (value: string | number | string[]) => {
