@@ -16,13 +16,14 @@
 ### Features
 - **app:** imported items from abandoned repo
 - **changelog:** added changelog
-- **cv:** added fields
 - **cv:** reduce gap between text a little
+- **cv:** added fields
 - **cv-card:** added popout illusion
 - **git-ignore:** ignore sitemap generated items
 - **license:** added license
-- **project-list-card:** update appearance to be nicer
 - **project-list-card:** general improvement
+- **project-list-card:** update appearance to be nicer
+- **project-list-card:** uses a tag instead of using onclick to open repository
 - **rustywind:** added rustywind to dev dependencies
 - **sharp:** added sharp for nextjs
 - **sidebar:** added sidebar to whole site
