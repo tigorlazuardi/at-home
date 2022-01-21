@@ -23,15 +23,16 @@
 - **git-ignore:** ignore sitemap generated items
 - **license:** added license
 - **project-list-card:** uses a tag instead of using onclick to open repository
-- **project-list-card:** update appearance to be nicer
 - **project-list-card:** general improvement
+- **project-list-card:** update appearance to be nicer
 - **rustywind:** added rustywind to dev dependencies
 - **sharp:** added sharp for nextjs
 - **sidebar:** added sidebar to whole site
 - **sitemap:** added next sitemap and robot txt
-- **tailwind:** finished configuration
 - **tailwind:** added darkmode
+- **tailwind:** finished configuration
 - **titles:** increase font size and change to bold
+- **titles:** reduced size on mobile
 
 ### Revert
 - **seo:** removed skeleton component
