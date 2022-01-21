@@ -6,6 +6,7 @@
 - format
 - test tailwind
 - removed unused imports
+- **projects:** grammar fixes
 
 ### Configuration
 - **changelog:** set title mappings

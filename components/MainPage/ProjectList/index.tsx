@@ -10,7 +10,7 @@ export default function ProjectList({ projectItems }: ProjectListProp) {
 			<header className="divide-y-4">
 				<h1 className="py-4 text-4xl font-bold">Projects</h1>
 				<p className="py-4">
-					Following projects are the things I am working on or have done and I left it as open source.
+					Following projects are the things I am working on or have done and left it as open source.
 				</p>
 			</header>
 			<div className="flex flex-wrap gap-x-5 justify-between content-end items-stretch">
