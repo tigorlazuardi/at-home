@@ -19,6 +19,7 @@
 - **changelog:** added changelog
 - **cv:** reduce gap between text a little
 - **cv:** added fields
+- **cv:** mobile improvements
 - **cv-card:** added popout illusion
 - **git-ignore:** ignore sitemap generated items
 - **license:** added license
