@@ -21,7 +21,7 @@ export default function ProjectDisplayCard({
 	return (
 		<div className={className}>
 			<div
-				className="overflow-hidden h-full rounded-xl shadow-lg transition-all hover:shadow-xl hover:-translate-y-2 hover:cursor-pointer focus:shadow-xl focus:-translate-y-1 min-w-xs min-h-12 dark:shadow-discord-900 dark:bg-discord-700"
+				className="overflow-hidden h-full rounded-xl shadow-lg transition-all hover:shadow-xl hover:-translate-y-2 hover:cursor-pointer focus:shadow-xl focus:-translate-y-1 min-w-xs min-h-8 dark:shadow-discord-900 dark:bg-discord-700"
 				onClick={() => window.open(projectURL, '_blank')}
 			>
 				<div className="py-4 px-6">

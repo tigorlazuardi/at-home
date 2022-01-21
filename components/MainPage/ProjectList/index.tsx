@@ -22,7 +22,7 @@ export default function ProjectList({ projectItems }: ProjectListProp) {
 						tags={v.tags}
 						description={v.description}
 						key={i}
-						className="gap-x-4 sm:py-2 grow sm-max:basis-full sm:basis-1/3"
+						className="gap-x-4 sm:py-2 grow sm-max:py-2 sm-max:basis-full sm:basis-1/3"
 					/>
 				))}
 			</div>

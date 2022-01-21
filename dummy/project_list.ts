@@ -6,7 +6,7 @@ const projectList: ProjectDisplayCardItem[] = [
 		projectName: 'ridit-rs',
 		projectURL: 'https://github.com/tigorlazuardi/ridit-rs',
 		description: 'Reddit image downloader written in Rust',
-		tags: ['web', 'async', 'tokio'],
+		tags: ['web', 'async', 'tokio', 'http'],
 		language: 'rust',
 	},
 	{
