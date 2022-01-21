@@ -8,7 +8,7 @@ export default function ProjectList({ projectItems }: ProjectListProp) {
 	return (
 		<section>
 			<header className="divide-y-4">
-				<h1 className="py-4">Projects</h1>
+				<h1 className="py-4 text-4xl font-bold">Projects</h1>
 				<p className="py-4">
 					Following projects are the things I am working on or have done and I left it as open source.
 				</p>
