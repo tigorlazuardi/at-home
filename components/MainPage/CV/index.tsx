@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import * as React from 'react'
 import Bio from './Bio'
+import Experience from './Experience'
 
 export interface CVItems {
 	age: number
@@ -27,6 +28,7 @@ export default function CV(prop: CVProps) {
 				</div>
 				<Bio age={prop.age} className="py-2 px-4 w-full grow sm-max:mb-4 sm-max:basis-full" />
 			</div>
+			<Experience className="pt-4" />
 		</div>
 	)
 }
