@@ -46,7 +46,7 @@ export default function Bio(prop: BioProps) {
 			return (
 				<div className="flex flex-wrap pt-2 sm-max:pt-1">
 					{value.map((v) => (
-						<div key={v} className="pl-1 basis-1/2 sm-max:text-sm">
+						<div key={v} className="pl-1 sm:basis-full sm-max:basis-1/2 sm-max:text-sm xl:basis-1/2">
 							{v}
 						</div>
 					))}
@@ -63,9 +63,9 @@ export default function Bio(prop: BioProps) {
 				{data.map((k) => (
 					<div
 						key={k.key}
-						className="divide-y-4 divide-black divide-double dark:divide-white basis-1/4 grow sm-max:basis-1/2"
+						className="divide-y-4 divide-black divide-double dark:divide-white basis-1/4 grow lg-max:basis-full"
 					>
-						<div className="pb-2 pl-1 font-bold sm-max:pb-1">{k.key}</div>
+						<div className="pb-2 pl-1 font-bold md-max:pb-1">{k.key}</div>
 						{renderValue(k.value)}
 					</div>
 				))}

@@ -26,3 +26,11 @@ a {
 .sidebar-tooltip-scale-0 {
 	@apply left-14 min-w-max bg-discord-900 2xl:text-lg sm-max:hidden dark:bg-discord-700 absolute z-50 w-auto p-2 m-2 text-xs font-bold text-white transition-all duration-100 origin-right scale-0 rounded-md shadow-md;
 }
+
+.tooltip-cv-scale-0 {
+	@apply bottom-14 min-w-max bg-discord-900 2xl:text-lg sm-max:hidden dark:bg-discord-700 absolute z-50 w-auto p-2 m-2 text-xs font-bold text-white transition-all duration-100 origin-right scale-0 rounded-md shadow-md;
+}
+
+.left-half {
+	left: 50%;
+}

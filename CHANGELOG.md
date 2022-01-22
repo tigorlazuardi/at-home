@@ -12,6 +12,7 @@
 - update changelog
 
 ### Features
+- **bio:** added tooltip on hover github and linkedin
 - **bio:** update content
 - **bio:** update content
 - **bio:** update content
