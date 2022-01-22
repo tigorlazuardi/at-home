@@ -38,7 +38,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 							: window.localStorage.setItem('dark_mode', 'false')
 					}}
 				/>
-				<TopBar className="h-16" />
+				<TopBar />
 				<div className="sm:pl-16">
 					<Component {...pageProps} />
 				</div>
