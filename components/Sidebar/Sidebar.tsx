@@ -5,7 +5,7 @@ import { FaMoon, FaSun } from 'react-icons/fa'
 
 import entries from './Entries'
 
-interface SideBarProp {
+export interface SideBarProp {
 	dark?: boolean
 	icon_size?: number
 	on_click?: () => void
@@ -14,7 +14,7 @@ interface SideBarProp {
 const SideBar = ({ dark, icon_size, on_click }: SideBarProp) => {
 	const ico = icon_size ?? 28
 	return (
-		<nav className="flex fixed top-0 left-0 flex-col m-0 w-16 h-screen text-white shadow-lg bg-white-800 dark:text-dark dark:bg-discord-800 sm-max:hidden">
+		<nav className="flex fixed top-0 left-0 flex-col m-0 w-16 h-screen text-white shadow-lg bg-white-800 sm-max:hidden dark:text-dark dark:bg-discord-800">
 			{entries.map((v, i) => (
 				<SideBarIcon
 					key={i}
@@ -35,7 +35,7 @@ const SideBar = ({ dark, icon_size, on_click }: SideBarProp) => {
 	)
 }
 
-interface SideBarIconProp {
+export interface SideBarIconProp {
 	icon: React.ReactElement
 	text: string
 	link_target?: string

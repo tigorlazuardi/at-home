@@ -7,6 +7,7 @@ import clsx from 'clsx'
 import * as React from 'react'
 
 import SideBar from '../components/Sidebar/Sidebar'
+import TopBar from '../components/Sidebar/TopBar'
 
 function MyApp({ Component, pageProps }: AppProps) {
 	const [dark, setDark] = React.useState(true)
@@ -37,6 +38,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 							: window.localStorage.setItem('dark_mode', 'false')
 					}}
 				/>
+				<TopBar className="h-16" />
 				<div className="sm:pl-16">
 					<Component {...pageProps} />
 				</div>
