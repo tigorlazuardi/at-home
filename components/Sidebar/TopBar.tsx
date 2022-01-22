@@ -41,7 +41,7 @@ export default function TopBar({ dark, on_click, icon_size, ...props }: TopBarPr
 	const { isScrollingDown } = scrollState
 	const topBarClassName =
 		'flex fixed top-0 left-0 z-50 gap-6 items-center px-4 py-3 m-0 w-screen \
-	dark:text-white sm:hidden bg-white-800 dark:bg-discord-800 transition-all \
+	dark:text-white sm:hidden bg-white-800 dark:bg-discord-700 transition-all \
 	duration-300'
 
 	return (
@@ -51,7 +51,7 @@ export default function TopBar({ dark, on_click, icon_size, ...props }: TopBarPr
 				className={clsx({
 					[topBarClassName]: true,
 					'-translate-y-16': isScrollingDown,
-					'shadow-xl': true,
+					'shadow-2xl': true,
 				})}
 			>
 				<FaBars className="dark:text-white" size={ico} />

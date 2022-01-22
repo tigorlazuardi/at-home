@@ -14,10 +14,11 @@
 ### Features
 - **bio:** update content
 - **bio:** update content
-- **bio:** changed div to section
 - **bio:** update content
+- **bio:** changed div to section
 - **next:** increase version to latest
 - **projects:** improvement for mobile
+- **topbar:** change color and shadow size
 - **topbar:** implemented auto hide
 - **topbar:** added top bar
 
