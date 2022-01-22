@@ -5,12 +5,13 @@
 - audit fix
 
 ### Features
-- **bio:** changed div to section
 - **bio:** update content
+- **bio:** changed div to section
 - **bio:** update content
 - **bio:** update content
 - **next:** increase version to latest
 - **projects:** improvement for mobile
+- **topbar:** added top bar
 
 
 <a name="0.1.1"></a>
