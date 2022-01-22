@@ -1,6 +1,9 @@
 <a name="unreleased"></a>
 ## [Unreleased]
 
+### Bug Fixes
+- **topbar:** fix dark mode class
+
 ### Cleanups
 - format
 - audit fix
