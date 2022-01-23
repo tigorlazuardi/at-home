@@ -2,7 +2,7 @@ import Image from 'next/image'
 import { HTMLAttributes } from 'react'
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
 
-interface TooltipProp extends HTMLAttributes<HTMLDivElement> {
+interface TooltipProp {
 	text: string
 }
 

@@ -8,6 +8,7 @@
 ### Cleanups
 - format
 - audit fix
+- **profile:** removed useless extends
 
 ### Code Refactoring
 - **cv:** profile picture is now split into it's own file
