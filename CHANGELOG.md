@@ -10,6 +10,7 @@
 
 ### Code Refactoring
 - **cv:** profile picture is now split into it's own file
+- **profile:** more readability
 
 ### Docs
 - update changelog
