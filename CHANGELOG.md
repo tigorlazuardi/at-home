@@ -8,6 +8,9 @@
 - format
 - audit fix
 
+### Code Refactoring
+- **cv:** profile picture is now split into it's own file
+
 ### Docs
 - update changelog
 
