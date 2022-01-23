@@ -1,12 +1,16 @@
+import clsx from 'clsx'
 import React from 'react'
 
 export interface BioProps extends React.HTMLAttributes<HTMLDivElement> {
 	age: number
 }
 
+type Value = string | number | string[]
+
 interface Data {
 	key: string
-	value: string | number | string[]
+	value: Value
+	pair?: boolean
 }
 
 export default function Bio(prop: BioProps) {
@@ -17,6 +21,7 @@ export default function Bio(prop: BioProps) {
 		{
 			key: 'Education',
 			value: ['University of Indonesia', '2012 - 2018', 'Hacktiv8', '2019 July - December'],
+			pair: true,
 		},
 		{ key: 'Residence', value: 'Indonesia' },
 		{ key: 'Language', value: ['Go', 'Rust', 'Typescript', 'Lua', 'Dart'] },
@@ -37,16 +42,22 @@ export default function Bio(prop: BioProps) {
 			],
 		},
 		{ key: 'Job', value: 'Backend Engineer' },
-		{ key: 'Current Working Location', value: 'PT Bareksa Portal Investasi' },
-		{ key: 'Work Experience', value: ['Bareksa', '2019 December to Now'] },
+		{ key: 'Working Location', value: 'PT Bareksa Portal Investasi' },
+		{ key: 'Work Experience', value: ['Bareksa', '2019 December to Now'], pair: true },
 	]
 
-	const renderValue = (value: string | number | string[]) => {
+	const renderValue = (value: Value, pair = false) => {
 		if (Array.isArray(value)) {
 			return (
 				<div className="flex flex-wrap pt-2 sm-max:pt-1">
 					{value.map((v) => (
-						<div key={v} className="pl-1 sm:basis-full sm-max:basis-1/2 sm-max:text-sm xl:basis-1/2">
+						<div
+							key={v}
+							className={clsx({
+								['pl-1 basis-1/2 sm-max:text-sm']: true,
+								['dark:even:text-yellow-500 even:font-bold']: pair,
+							})}
+						>
 							{v}
 						</div>
 					))}
@@ -63,10 +74,10 @@ export default function Bio(prop: BioProps) {
 				{data.map((k) => (
 					<div
 						key={k.key}
-						className="divide-y-4 divide-black divide-double dark:divide-white basis-1/4 grow lg-max:basis-full"
+						className="divide-y-4 divide-black divide-double dark:divide-white grow basis-1/3 lg-max:basis-full xl:basis-1/4"
 					>
 						<div className="pb-2 pl-1 font-bold md-max:pb-1">{k.key}</div>
-						{renderValue(k.value)}
+						{renderValue(k.value, k.pair)}
 					</div>
 				))}
 			</div>
