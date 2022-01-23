@@ -2,16 +2,12 @@ import Image from 'next/image'
 import { HTMLAttributes } from 'react'
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
 
-interface TooltipProp {
+interface TooltipProp extends HTMLAttributes<HTMLDivElement> {
 	text: string
 }
 
 const Tooltip = ({ text }: TooltipProp) => (
-	<span
-		className={
-			'min-w-max bg-discord-900 2xl:text-lg dark:bg-discord-700 absolute z-50 w-auto p-2 m-2 text-xs font-bold text-white transition-all duration-100 origin-bottom scale-0 rounded-md shadow-md group-hover:scale-100 -translate-x-6'
-		}
-	>
+	<span className="absolute top-full z-50 p-2 m-2 w-auto min-w-max text-xs font-bold text-white rounded-md shadow-md transition-all duration-100 origin-bottom scale-0 2xl:text-lg group-hover:scale-100 min-h-max bg-discord-900 dark:bg-discord-700">
 		{text}
 	</span>
 )
@@ -19,17 +15,27 @@ const Tooltip = ({ text }: TooltipProp) => (
 interface SiteListProp {
 	iconSize?: number | string
 }
-const SiteList = ({ iconSize = '2rem' }: SiteListProp) => {
+const SiteList = ({ iconSize = '1.8rem' }: SiteListProp) => {
 	return (
 		<div className="flex gap-x-3 justify-center items-center mt-3">
-			<div className="group">
-				<a target="_blank" rel="noreferrer" href="https://github.com/tigorlazuardi">
+			<div className="relative group">
+				<a
+					target="_blank"
+					rel="noreferrer"
+					className="flex flex-col items-center"
+					href="https://github.com/tigorlazuardi"
+				>
 					<FaGithub className="transition-all hover:text-yellow-500" size={iconSize} />
 					<Tooltip text="Github" />
 				</a>
 			</div>
-			<div className="group">
-				<a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/tigor-hutasuhut-00346463/">
+			<div className="relative group">
+				<a
+					target="_blank"
+					rel="noreferrer"
+					className="flex flex-col items-center"
+					href="https://www.linkedin.com/in/tigor-hutasuhut-00346463/"
+				>
 					<FaLinkedin className="transition-all hover:text-yellow-500" size={iconSize} />
 					<Tooltip text="LinkedIn" />
 				</a>

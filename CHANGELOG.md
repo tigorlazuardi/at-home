@@ -2,6 +2,7 @@
 ## [Unreleased]
 
 ### Bug Fixes
+- **profile:** tooltip now properly aligned
 - **topbar:** fix dark mode class
 
 ### Cleanups
