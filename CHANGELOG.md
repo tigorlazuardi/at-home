@@ -24,6 +24,7 @@
 - **bio:** update content
 - **bio:** changed div to section
 - **next:** increase version to latest
+- **profile:** added quote text
 - **projects:** improvement for mobile
 - **topbar:** change color and shadow size
 - **topbar:** implemented auto hide
