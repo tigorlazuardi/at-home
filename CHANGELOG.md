@@ -23,6 +23,7 @@
 - **bio:** update content
 - **bio:** update content
 - **bio:** changed div to section
+- **index:** added justify center
 - **next:** increase version to latest
 - **profile:** added quote text
 - **projects:** improvement for mobile
