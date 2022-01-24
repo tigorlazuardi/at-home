@@ -1,6 +1,6 @@
 export default function Experience(props: React.HTMLAttributes<HTMLDivElement>) {
 	return (
-		<section {...props}>
+		<article {...props}>
 			<p className="my-2">I work as Backend Engineer at PT Bareksa Portal Investasi.</p>
 			<p className="my-2">
 				My job is to create HTTP Services and message Consumer and Producer services for event based workflow.
@@ -22,6 +22,6 @@ export default function Experience(props: React.HTMLAttributes<HTMLDivElement>) 
 				ingests to consume and logs from Kubernetes pods for queries (especially if something unwanted happened
 				in production) and metrics.
 			</p>
-		</section>
+		</article>
 	)
 }

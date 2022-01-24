@@ -6,6 +6,7 @@
 - **topbar:** fix dark mode class
 
 ### Cleanups
+- html5 tag
 - format
 - audit fix
 - **profile:** removed useless extends

@@ -21,7 +21,7 @@ export default function CV(prop: CVProps) {
 				<Profile iconSize={prop.iconSize} />
 				<Bio age={prop.age} className="py-2 px-4 w-full grow md-max:mb-4 md-max:basis-full" />
 			</div>
-			<Experience className="pt-4" />
+			<Experience className="mt-4" />
 		</div>
 	)
 }
