@@ -11,6 +11,11 @@ import TopBar from '../components/Sidebar/TopBar'
 
 function MyApp({ Component, pageProps }: AppProps) {
 	const [dark, setDark] = React.useState(true)
+	const handleDarkCB = () => {
+		const next = !dark
+		setDark(next)
+		next ? window.localStorage.setItem('dark_mode', 'true') : window.localStorage.setItem('dark_mode', 'false')
+	}
 	React.useEffect(() => {
 		const falsey = window.localStorage.getItem('dark_mode') === 'false'
 		setDark(!falsey)
@@ -28,17 +33,8 @@ function MyApp({ Component, pageProps }: AppProps) {
 					['transition-all']: true,
 				})}
 			>
-				<SideBar
-					dark={dark}
-					on_click={() => {
-						const next = !dark
-						setDark(next)
-						next
-							? window.localStorage.setItem('dark_mode', 'true')
-							: window.localStorage.setItem('dark_mode', 'false')
-					}}
-				/>
-				<TopBar />
+				<SideBar dark={dark} on_click={handleDarkCB} />
+				<TopBar dark={dark} on_click={handleDarkCB} />
 				<div className="sm:pl-16">
 					<Component {...pageProps} />
 				</div>

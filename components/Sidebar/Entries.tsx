@@ -2,7 +2,7 @@ import { ReactElement } from 'react'
 import { FaHome } from 'react-icons/fa'
 
 export interface EntryItem {
-	icon: ReactElement
+	icon: (size?: number | string) => ReactElement
 	size: number
 	tooltip_text: string
 	link_target?: string
@@ -11,7 +11,7 @@ export interface EntryItem {
 
 const entries: EntryItem[] = [
 	{
-		icon: <FaHome />,
+		icon: (size) => <FaHome size={size} />,
 		size: 28,
 		tooltip_text: 'Home',
 		link_target: '/',

@@ -7,26 +7,25 @@ import entries from './Entries'
 
 export interface SideBarProp {
 	dark?: boolean
-	icon_size?: number
+	icon_size?: number | string
 	on_click?: () => void
 }
 
-const SideBar = ({ dark, icon_size, on_click }: SideBarProp) => {
-	const ico = icon_size ?? 28
+const SideBar = ({ dark, icon_size = '1.35rem', on_click }: SideBarProp) => {
 	return (
 		<nav className="flex fixed top-0 left-0 flex-col m-0 w-16 h-screen text-white shadow-lg bg-white-800 sm-max:hidden dark:text-dark dark:bg-discord-800">
 			{entries.map((v, i) => (
 				<SideBarIcon
 					key={i}
 					text={v.tooltip_text}
-					icon={v.icon}
+					icon={v.icon(icon_size)}
 					link_target={v.link_target}
 					is_active={v.is_active}
 				/>
 			))}
 			<div className={'flex flex-grow justify-center items-end pb-4'}>
 				<SideBarIcon
-					icon={dark ? <FaMoon size={ico} /> : <FaSun size={ico} />}
+					icon={dark ? <FaMoon size={icon_size} /> : <FaSun size={icon_size} />}
 					text={`${dark ? 'Dark' : 'Light'} Theme`}
 					on_click={on_click}
 				/>
