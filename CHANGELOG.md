@@ -21,18 +21,19 @@
 - update changelog
 
 ### Features
-- **bio:** update content
-- **bio:** changed div to section
-- **bio:** added pair handling for entries
 - **bio:** added tooltip on hover github and linkedin
+- **bio:** changed div to section
+- **bio:** update content
+- **bio:** added pair handling for entries
 - **bio:** update content
 - **bio:** update content
 - **index:** added justify center
 - **next:** increase version to latest
 - **profile:** added quote text
 - **projects:** improvement for mobile
-- **top-bar:** added border to enhance it's view
+- **top-bar:** icons now has background effect on hover or pressed
 - **top-bar:** added dark mode toggle on top bar
+- **top-bar:** added border to enhance it's view
 - **topbar:** added top bar
 - **topbar:** change color and shadow size
 - **topbar:** implemented auto hide

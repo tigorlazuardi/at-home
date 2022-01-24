@@ -59,19 +59,18 @@ export default function TopBar({ dark, on_click, icon_size = '1.35rem', ...props
 			<div className="h-16"></div>
 			<div
 				className={clsx({
-					['flex bg-white shadow-2xl border-b dark:border-discord-900 fixed top-0 left-0 z-50 gap-6 items-center px-4 py-3 m-0 w-full dark:text-white sm:hidden dark:bg-discord-700 transition-all duration-300']:
+					['flex bg-white shadow-2xl border-b dark:border-discord-900 fixed top-0 left-0 z-50 gap-3 items-center px-4 py-2 m-0 w-full dark:text-white sm:hidden dark:bg-discord-700 transition-all duration-300']:
 						true,
 					'-translate-y-16': isScrollingDown,
 				})}
 			>
-				<FaBars className="dark:text-white" size={icon_size} />
+				<div className="p-2.5 rounded-full transition-all duration-150 ease-liner dark:hover:bg-discord-800 hover:bg-discord-300">
+					<FaBars className="dark:text-white" size={icon_size} />
+				</div>
 				<div className="text-2xl font-bold dark:text-white grow">{active?.tooltip_text || '@Home'}</div>
-				<DarkModeIcon
-					className="mr-3 text-green-800 transition-all dark:text-green-500 hover:p-1 hover:text-white hover:bg-green-600 hover:rounded-lg hover:scale-150 dark:hover:text-white dark:bg-discord-700 dark:hover:bg-green-600"
-					dark={dark}
-					icon_size={icon_size}
-					on_click={on_click}
-				/>
+				<div className="text-green-800 rounded-2xl transition-all duration-100 ease-linear dark:text-green-500 hover:text-white hover:bg-green-600 hover:rounded-lg dark:bg-discord-700 dark:hover:bg-green-600 dark:hover:text-white">
+					<DarkModeIcon className="m-2.5" dark={dark} icon_size={icon_size} on_click={on_click} />
+				</div>
 			</div>
 		</div>
 	)
