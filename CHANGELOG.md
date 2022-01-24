@@ -21,20 +21,21 @@
 - update changelog
 
 ### Features
+- **bio:** update content
 - **bio:** changed div to section
 - **bio:** added pair handling for entries
 - **bio:** added tooltip on hover github and linkedin
-- **bio:** update content
 - **bio:** update content
 - **bio:** update content
 - **index:** added justify center
 - **next:** increase version to latest
 - **profile:** added quote text
 - **projects:** improvement for mobile
+- **top-bar:** added border to enhance it's view
 - **top-bar:** added dark mode toggle on top bar
-- **topbar:** implemented auto hide
-- **topbar:** change color and shadow size
 - **topbar:** added top bar
+- **topbar:** change color and shadow size
+- **topbar:** implemented auto hide
 
 
 <a name="0.1.1"></a>

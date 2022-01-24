@@ -59,7 +59,7 @@ export default function TopBar({ dark, on_click, icon_size = '1.35rem', ...props
 			<div className="h-16"></div>
 			<div
 				className={clsx({
-					['flex bg-white shadow-2xl fixed top-0 left-0 z-50 gap-6 items-center px-4 py-3 m-0 w-screen dark:text-white sm:hidden dark:bg-discord-700 transition-all duration-300']:
+					['flex bg-white shadow-2xl border-b dark:border-discord-900 fixed top-0 left-0 z-50 gap-6 items-center px-4 py-3 m-0 w-full dark:text-white sm:hidden dark:bg-discord-700 transition-all duration-300']:
 						true,
 					'-translate-y-16': isScrollingDown,
 				})}
