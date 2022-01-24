@@ -14,6 +14,9 @@
 - **cv:** profile picture is now split into it's own file
 - **profile:** more readability
 
+### Configuration
+- **prettier:** bracket spacing is explicitly true now
+
 ### Docs
 - update changelog
 
