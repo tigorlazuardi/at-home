@@ -16,6 +16,7 @@
 - **profile:** more readability
 
 ### Configuration
+- **eslint:** added warning on console statements
 - **prettier:** bracket spacing is explicitly true now
 
 ### Docs
