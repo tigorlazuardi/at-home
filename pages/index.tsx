@@ -28,7 +28,7 @@ export default function Index({ projectList, age }: InferGetStaticPropsType<type
 	return (
 		<div className="container py-2 md:px-36 dark:text-white">
 			<Introductory />
-			<CV age={age} />
+			<CV age={age} iconSize={24} />
 			<ProjectList projectItems={projectList} />
 		</div>
 	)

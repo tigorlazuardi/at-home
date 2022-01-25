@@ -16,6 +16,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 		setDark(next)
 		next ? window.localStorage.setItem('dark_mode', 'true') : window.localStorage.setItem('dark_mode', 'false')
 	}
+	const iconSize = 24
 	React.useEffect(() => {
 		const falsey = window.localStorage.getItem('dark_mode') === 'false'
 		setDark(!falsey)
@@ -33,8 +34,8 @@ function MyApp({ Component, pageProps }: AppProps) {
 					['transition-all']: true,
 				})}
 			>
-				<SideBar dark={dark} on_click={handleDarkCB} />
-				<TopBar dark={dark} on_click={handleDarkCB} />
+				<SideBar icon_size={iconSize} dark={dark} on_click={handleDarkCB} />
+				<TopBar icon_size={iconSize} dark={dark} on_click={handleDarkCB} />
 				<div className="sm:pl-16">
 					<Component {...pageProps} />
 				</div>
