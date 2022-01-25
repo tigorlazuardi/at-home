@@ -27,16 +27,17 @@
 - **bio:** update content
 - **bio:** update content
 - **bio:** changed div to section
-- **bio:** added pair handling for entries
 - **bio:** update content
+- **bio:** added pair handling for entries
+- **cv:** text justify on paragraph like texts
 - **experience:** increase paragraph gap on mobile
 - **index:** added justify center
 - **next:** increase version to latest
 - **profile:** added quote text
 - **projects:** improvement for mobile
-- **top-bar:** icons now has background effect on hover or pressed
 - **top-bar:** added dark mode toggle on top bar
 - **top-bar:** added border to enhance it's view
+- **top-bar:** icons now has background effect on hover or pressed
 - **topbar:** added top bar
 - **topbar:** implemented auto hide
 - **topbar:** change color and shadow size
