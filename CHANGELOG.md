@@ -40,6 +40,9 @@
 - **topbar:** change color and shadow size
 - **topbar:** implemented auto hide
 
+### Performance Improvements
+- **top-bar:** callback now registered and removed only once when component is up
+
 
 <a name="0.1.1"></a>
 ## [0.1.1] - 2022-01-21

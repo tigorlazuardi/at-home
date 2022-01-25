@@ -36,22 +36,16 @@ export default function TopBar({ dark, on_click, icon_size = '1.35rem', ...props
 	})
 	useEffect(() => {
 		const cb = (_e: Event) => {
-			const current = window.scrollY
-			if (current > 20) {
-				setScrollState({
-					previous: current,
-					isScrollingDown: current > scrollState.previous,
-				})
-			} else {
-				setScrollState({
-					previous: current,
-					isScrollingDown: false,
-				})
-			}
+			const current = window.scrollY,
+				previous = current,
+				isScrollingDown = current > 20 ? current > scrollState.previous : false
+			setScrollState({ previous, isScrollingDown })
 		}
 		window.addEventListener('scroll', cb)
 		return () => window.removeEventListener('scroll', cb)
-	}, [scrollState])
+		// No need for exhaustive dependency. We only want the useEffect and clean up run only once
+	}, []) // eslint-disable-line react-hooks/exhaustive-deps
+
 	const { isScrollingDown } = scrollState
 
 	return (
