@@ -24,11 +24,12 @@
 
 ### Features
 - **bio:** added tooltip on hover github and linkedin
-- **bio:** changed div to section
 - **bio:** update content
+- **bio:** update content
+- **bio:** changed div to section
 - **bio:** added pair handling for entries
 - **bio:** update content
-- **bio:** update content
+- **experience:** increase paragraph gap on mobile
 - **index:** added justify center
 - **next:** increase version to latest
 - **profile:** added quote text
@@ -37,8 +38,8 @@
 - **top-bar:** added dark mode toggle on top bar
 - **top-bar:** added border to enhance it's view
 - **topbar:** added top bar
-- **topbar:** change color and shadow size
 - **topbar:** implemented auto hide
+- **topbar:** change color and shadow size
 
 ### Performance Improvements
 - **top-bar:** callback now registered and removed only once when component is up
