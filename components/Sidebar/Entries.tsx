@@ -1,5 +1,5 @@
 import { ReactElement } from 'react'
-import { FaHome } from 'react-icons/fa'
+import { FaHome, FaServer } from 'react-icons/fa'
 
 export interface EntryItem {
 	icon: (size?: number | string) => ReactElement
@@ -16,6 +16,13 @@ const entries: EntryItem[] = [
 		tooltip_text: 'Home',
 		link_target: '/',
 		is_active: (route: string) => route === '/',
+	},
+	{
+		icon: (size) => <FaServer size={size} />,
+		size: 28,
+		tooltip_text: 'Server Status',
+		link_target: '/status',
+		is_active: (route: string) => route === '/status',
 	},
 ]
 
