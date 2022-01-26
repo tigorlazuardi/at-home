@@ -82,7 +82,7 @@ export class Socket {
 				const { event, message } = this.validate(payload)
 				const handlerGroup = this.handlers[event]
 				if (!handlerGroup || !handlerGroup.size) {
-					throw new Error(`server does not have event request ${event}`)
+					throw new Error(`server does not respond to event ${event}`)
 				}
 				handlerGroup.forEach((handler) => this.withRecovery(ws, () => handler(ws, message)))
 			})
