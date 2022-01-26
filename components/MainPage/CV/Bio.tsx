@@ -55,7 +55,7 @@ export default function Bio(prop: BioProps) {
 							key={v}
 							className={clsx({
 								['pl-1 basis-1/2 sm-max:text-sm']: true,
-								['dark:even:text-yellow-500 even:font-bold']: pair,
+								['dark:even:text-yellow-500 even:font-bold even:text-right even:pr-1']: pair,
 							})}
 						>
 							{v}

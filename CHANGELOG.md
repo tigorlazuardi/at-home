@@ -29,6 +29,7 @@
 - **bio:** update content
 - **bio:** changed div to section
 - **bio:** added tooltip on hover github and linkedin
+- **bio:** paired text even entry now aligned to right
 - **bio:** update content
 - **cv:** text justify on paragraph like texts
 - **experience:** increase paragraph gap on mobile
