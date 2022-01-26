@@ -6,6 +6,7 @@
 - **topbar:** fix dark mode class
 
 ### Cleanups
+- fix typo
 - html5 tag
 - format
 - audit fix
@@ -52,13 +53,12 @@
 
 
 <a name="0.1.1"></a>
-## 0.1.1 - 2022-01-21
+## [0.1.1] - 2022-01-21
 ### Cleanups
 - sort tailwind classes
 - format
 - test tailwind
 - removed unused imports
-- format
 - **projects:** grammar fixes
 
 ### Configuration
@@ -69,15 +69,14 @@
 
 ### Features
 - **app:** imported items from abandoned repo
-- **bio:** update bio
 - **bio:** update
+- **bio:** update bio
 - **changelog:** added changelog
 - **cv:** mobile improvements
 - **cv:** reduce gap between text a little
 - **cv:** added fields
 - **cv-card:** added popout illusion
 - **git-ignore:** ignore sitemap generated items
-- **lefthook:** added lefthook
 - **license:** added license
 - **project-list-card:** uses a tag instead of using onclick to open repository
 - **project-list-card:** general improvement
@@ -89,10 +88,9 @@
 - **sitemap:** added next sitemap and robot txt
 - **tailwind:** added darkmode
 - **tailwind:** finished configuration
-- **tailwind:** added tailwind config
 - **text-size:** reduced text size on mobile
-- **titles:** reduced size on mobile
 - **titles:** increase font size and change to bold
+- **titles:** reduced size on mobile
 
 ### Revert
 - **seo:** removed skeleton component
@@ -106,4 +104,15 @@
 - **seo:** added global seo
 
 
+<a name="0.1.0"></a>
+## 0.1.0 - 2022-01-19
+### Cleanups
+- format
+
+### Features
+- **lefthook:** added lefthook
+- **tailwind:** added tailwind config
+
+
 [Unreleased]: https://github.com/tigorlazuardi/at-home/compare/0.1.1...HEAD
+[0.1.1]: https://github.com/tigorlazuardi/at-home/compare/0.1.0...0.1.1

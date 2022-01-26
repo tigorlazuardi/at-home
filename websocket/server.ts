@@ -25,10 +25,10 @@ export class Socket {
 	private handlers: EventHandler = {}
 	constructor(opts?: ServerOptions) {
 		this.wss = new WebSocketServer(opts)
-		this.intialize()
+		this.initialize()
 	}
 
-	private intialize() {
+	private initialize() {
 		this.wss.on('connection', (ws) => {
 			ws.on('close', () => this.wsRegistrar.delete(ws))
 			ws.on('message', this.createMessageHandler(ws))
