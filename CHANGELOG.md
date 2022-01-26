@@ -9,6 +9,7 @@
 - html5 tag
 - format
 - audit fix
+- **icons:** removed unused code
 - **profile:** removed useless extends
 
 ### Code Refactoring
