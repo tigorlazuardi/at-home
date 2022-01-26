@@ -24,13 +24,13 @@
 - update changelog
 
 ### Features
+- **bio:** added tooltip on hover github and linkedin
+- **bio:** paired text even entry now aligned to right
+- **bio:** update content
 - **bio:** added pair handling for entries
 - **bio:** update content
 - **bio:** update content
 - **bio:** changed div to section
-- **bio:** added tooltip on hover github and linkedin
-- **bio:** paired text even entry now aligned to right
-- **bio:** update content
 - **cv:** text justify on paragraph like texts
 - **experience:** increase paragraph gap on mobile
 - **icon-size:** icon size is standardized
@@ -38,12 +38,13 @@
 - **next:** increase version to latest
 - **profile:** added quote text
 - **projects:** improvement for mobile
+- **socket:** added websocket
 - **status-page:** added status page
-- **top-bar:** added dark mode toggle on top bar
 - **top-bar:** icons now has background effect on hover or pressed
+- **top-bar:** added dark mode toggle on top bar
 - **top-bar:** added border to enhance it's view
-- **topbar:** implemented auto hide
 - **topbar:** change color and shadow size
+- **topbar:** implemented auto hide
 - **topbar:** added top bar
 
 ### Performance Improvements

@@ -15,6 +15,7 @@ const Tooltip = ({ text }: TooltipProp) => (
 interface SiteListProp extends HTMLAttributes<HTMLDivElement> {
 	iconSize?: number | string
 }
+
 const SiteList = ({ iconSize = '1.8rem', ...props }: SiteListProp) => {
 	return (
 		<div {...props}>
