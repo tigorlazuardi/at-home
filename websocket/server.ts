@@ -1,5 +1,5 @@
 import { WebSocketServer, ServerOptions, WebSocket, RawData } from 'ws'
-import { Json, JsonObject, JsonTopStructure } from '../interface/common'
+import { Json, JsonObject, JSONSerializer, JsonTopStructure } from '../interface/common'
 import SocketEvent, { asSocketEvent } from '../interface/socket_event'
 
 export interface SocketMessage<T extends Json = Json> {
@@ -72,7 +72,9 @@ export class Socket {
 			event,
 			message: payload,
 		}
-		this.wsRegistrar.forEach((ws) => ws.send(message, cb ?? Socket.defaultErrorHandling))
+		this.wsRegistrar.forEach((ws) =>
+			this.withRecovery(ws, () => ws.send(message, cb ?? Socket.defaultErrorHandling)),
+		)
 	}
 
 	private createMessageHandler(ws: WebSocket) {
@@ -117,7 +119,7 @@ export class Socket {
 		if (Array.isArray(message) || message === null || typeof message !== 'object')
 			throw new Error(`exected message.message to be an object but got ${typeof message}`)
 		const event = asSocketEvent(payload.request)
-		return { event, message }
+		return { event, message: message as JsonObject }
 	}
 }
 
