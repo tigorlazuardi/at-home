@@ -37,7 +37,11 @@ export class Socket {
 	}
 
 	/**
-	 * Register message handler to an event.
+	 * Register message handler to an event, grouped by the SocketEvent.
+	 * All the handler in the group will be run against the client when the client socket asks for the group.
+	 *
+	 * Filtering must be manually and run in the given callback handler, but remember to clean up any dangling references
+	 * when client is disconnected so the memory will not leak
 	 *
 	 * callback that has same pointer will not be duplicated in the same SocketEvent
 	 */
@@ -82,7 +86,7 @@ export class Socket {
 				const { event, message } = this.validate(payload)
 				const handlerGroup = this.handlers[event]
 				if (!handlerGroup || !handlerGroup.size) {
-					throw new Error(`server does not have response to ${event}`)
+					throw new Error(`server does not support ${event} event`)
 				}
 				handlerGroup.forEach((handler) => this.withRecovery(ws, () => handler(ws, message)))
 			})
@@ -116,3 +120,8 @@ export class Socket {
 		return { event, message }
 	}
 }
+
+/** socket instance */
+const socket = new Socket()
+
+export default socket

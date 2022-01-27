@@ -29,8 +29,8 @@
 ### Features
 - **bio:** added pair handling for entries
 - **bio:** update content
-- **bio:** paired text even entry now aligned to right
 - **bio:** update content
+- **bio:** paired text even entry now aligned to right
 - **bio:** changed div to section
 - **bio:** added tooltip on hover github and linkedin
 - **bio:** update content
@@ -41,14 +41,15 @@
 - **next:** increase version to latest
 - **profile:** added quote text
 - **projects:** improvement for mobile
-- **socket:** added websocket
 - **socket:** added socket handlers
+- **socket:** added websocket
+- **socket:** added exported socket instance
 - **status-page:** added status page
-- **top-bar:** added border to enhance it's view
 - **top-bar:** added dark mode toggle on top bar
 - **top-bar:** icons now has background effect on hover or pressed
-- **topbar:** change color and shadow size
+- **top-bar:** added border to enhance it's view
 - **topbar:** implemented auto hide
+- **topbar:** change color and shadow size
 - **topbar:** added top bar
 
 ### Performance Improvements
