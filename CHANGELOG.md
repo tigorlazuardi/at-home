@@ -6,6 +6,7 @@
 - **topbar:** fix dark mode class
 
 ### Cleanups
+- format
 - removed unused imports
 - fix typo
 - html5 tag
