@@ -1,6 +1,6 @@
 import { IncomingMessage } from 'http'
 import { WebSocketServer, ServerOptions, WebSocket, RawData } from 'ws'
-import { Json, JsonObject, JSONSerializer, JsonTopStructure } from '../interface/common'
+import { Json, JsonObject, JsonTopStructure } from '../interface/common'
 import SocketEvent, { asSocketEvent } from '../interface/socket_event'
 
 export interface SocketMessage<T extends Json = Json> {
