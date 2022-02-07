@@ -28,12 +28,12 @@
 
 ### Features
 - **Json-type:** extend type to JSONSerializer
+- **bio:** added pair handling for entries
 - **bio:** update content
 - **bio:** update content
 - **bio:** changed div to section
 - **bio:** paired text even entry now aligned to right
 - **bio:** added tooltip on hover github and linkedin
-- **bio:** added pair handling for entries
 - **bio:** update content
 - **cv:** text justify on paragraph like texts
 - **experience:** increase paragraph gap on mobile
@@ -43,15 +43,16 @@
 - **profile:** added quote text
 - **projects:** improvement for mobile
 - **socket:** added websocket
-- **socket:** added socket handlers
 - **socket:** added exported socket instance
+- **socket:** added socket handlers
 - **status-page:** added status page
+- **top-bar:** added border to enhance it's view
 - **top-bar:** icons now has background effect on hover or pressed
 - **top-bar:** added dark mode toggle on top bar
-- **top-bar:** added border to enhance it's view
-- **topbar:** implemented auto hide
-- **topbar:** added top bar
 - **topbar:** change color and shadow size
+- **topbar:** added top bar
+- **topbar:** implemented auto hide
+- **websocket:** update websocket
 
 ### Performance Improvements
 - **top-bar:** callback now registered and removed only once when component is up

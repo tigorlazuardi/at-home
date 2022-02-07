@@ -1,3 +1,4 @@
+import { IncomingMessage } from 'http'
 import { WebSocketServer, ServerOptions, WebSocket, RawData } from 'ws'
 import { Json, JsonObject, JSONSerializer, JsonTopStructure } from '../interface/common'
 import SocketEvent, { asSocketEvent } from '../interface/socket_event'
@@ -24,16 +25,41 @@ export class Socket {
 	}
 
 	private initialize() {
-		this.wss.on('connection', (ws) => {
-			console.log(`new connection from ${ws.url}`) // eslint-disable-line no-console
+		this.wss.on('connection', (ws, req) => {
+			const address = this.getIPAdress(req)
+			console.log(`new connection from ${address}`) // eslint-disable-line no-console
+			const intervalID = setInterval(() => {
+				ws.ping(undefined, undefined, (err) => {
+					console.log(`connection from ${ws.url} has been closed. reason: ${err.message}`) // eslint-disable-line no-console
+					ws.terminate()
+				})
+			}, 5000)
+
 			ws.on('close', () => {
-				console.log(`connection from ${ws.url} has been closed`) // eslint-disable-line no-console
+				clearInterval(intervalID)
+				console.log(`connection from ${address} has been closed`) // eslint-disable-line no-console
 				this.wsRegistrar.delete(ws)
 			})
-			ws.on('message', this.createMessageHandler(ws))
-			ws.on('ping', () => ws.send('pong'))
+				.on('message', this.createMessageHandler(ws))
+				.on('ping', () => ws.send('pong'))
 			this.wsRegistrar.add(ws)
 		})
+	}
+
+	private getIPAdress(req: IncomingMessage): string {
+		let address: string
+		const forwarded = req.headers['x-forwarded-for']
+		if (forwarded) {
+			if (Array.isArray(forwarded)) {
+				if (forwarded.length > 0) address = forwarded.at(0)!.trim()
+				else address = req.socket.remoteAddress!
+			} else {
+				address = forwarded.trim()
+			}
+		} else {
+			address = req.socket.remoteAddress!
+		}
+		return address
 	}
 
 	/**
