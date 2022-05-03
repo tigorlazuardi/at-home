@@ -30,30 +30,31 @@
 
 ### Features
 - **Json-type:** extend type to JSONSerializer
-- **bio:** added pair handling for entries
+- **bio:** paired text even entry now aligned to right
 - **bio:** update content
 - **bio:** update content
 - **bio:** changed div to section
-- **bio:** paired text even entry now aligned to right
 - **bio:** added tooltip on hover github and linkedin
 - **bio:** update content
+- **bio:** added pair handling for entries
 - **cv:** text justify on paragraph like texts
 - **experience:** increase paragraph gap on mobile
 - **icon-size:** icon size is standardized
 - **index:** added justify center
 - **next:** increase version to latest
+- **package.json:** added author and repository
 - **profile:** added quote text
 - **projects:** improvement for mobile
 - **socket:** added websocket
 - **socket:** added exported socket instance
 - **socket:** added socket handlers
 - **status-page:** added status page
+- **top-bar:** added dark mode toggle on top bar
 - **top-bar:** added border to enhance it's view
 - **top-bar:** icons now has background effect on hover or pressed
-- **top-bar:** added dark mode toggle on top bar
+- **topbar:** implemented auto hide
 - **topbar:** change color and shadow size
 - **topbar:** added top bar
-- **topbar:** implemented auto hide
 - **websocket:** update websocket
 
 ### Performance Improvements
@@ -61,12 +62,13 @@
 
 
 <a name="0.1.1"></a>
-## [0.1.1] - 2022-01-21
+## 0.1.1 - 2022-01-21
 ### Cleanups
 - sort tailwind classes
 - format
 - test tailwind
 - removed unused imports
+- format
 - **projects:** grammar fixes
 
 ### Configuration
@@ -77,14 +79,15 @@
 
 ### Features
 - **app:** imported items from abandoned repo
-- **bio:** update
 - **bio:** update bio
+- **bio:** update
 - **changelog:** added changelog
 - **cv:** mobile improvements
 - **cv:** reduce gap between text a little
 - **cv:** added fields
 - **cv-card:** added popout illusion
 - **git-ignore:** ignore sitemap generated items
+- **lefthook:** added lefthook
 - **license:** added license
 - **project-list-card:** uses a tag instead of using onclick to open repository
 - **project-list-card:** general improvement
@@ -96,9 +99,10 @@
 - **sitemap:** added next sitemap and robot txt
 - **tailwind:** added darkmode
 - **tailwind:** finished configuration
+- **tailwind:** added tailwind config
 - **text-size:** reduced text size on mobile
-- **titles:** increase font size and change to bold
 - **titles:** reduced size on mobile
+- **titles:** increase font size and change to bold
 
 ### Revert
 - **seo:** removed skeleton component
@@ -112,15 +116,4 @@
 - **seo:** added global seo
 
 
-<a name="0.1.0"></a>
-## 0.1.0 - 2022-01-19
-### Cleanups
-- format
-
-### Features
-- **lefthook:** added lefthook
-- **tailwind:** added tailwind config
-
-
 [Unreleased]: https://github.com/tigorlazuardi/at-home/compare/0.1.1...HEAD
-[0.1.1]: https://github.com/tigorlazuardi/at-home/compare/0.1.0...0.1.1

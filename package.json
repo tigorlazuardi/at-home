@@ -1,6 +1,15 @@
 {
 	"name": "at-home",
 	"private": true,
+	"author": {
+		"name": "Tigor Hutasuhut",
+		"email": "tigor.hutasuhut@gmail.com",
+		"url": "https://tigor.web.id/web"
+	},
+	"repository": {
+		"url": "https://github.com/tigorlazuardi/at-home.git",
+		"type": "git"
+	},
 	"scripts": {
 		"dev": "next dev",
 		"build": "next build",
